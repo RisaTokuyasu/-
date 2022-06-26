@@ -1,0 +1,262 @@
+body{
+    
+   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.Back_main_img {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*ヘッダー編集*/
+
+.headerTop{
+    display:flex;
+    justify-content: space-between;
+    margin: 0px 36px;
+    padding: 20px 0;
+    position: absolute;
+    
+}
+.header{
+    position: relative;
+}
+
+/*ヘッダー画像*/
+.HeaderLogo{
+    height: 20px;
+    width:auto;
+}
+
+
+/*ヘッダーナビ編集*/
+
+.HanbergerNav{
+    display:flex;
+    align-items:center;
+    margin-right: 40px;
+}
+
+.HanbergerNav span:first-child{
+    font-family: 'Lato',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.HanbergerNav span:last-child{
+    font-size: 10px;
+}
+
+.contentber{
+    
+    margin-right: 41px;
+    text-align:center;
+}
+
+ span {
+    font-weight: 700;
+}
+
+
+.name1 {
+    display: flex;
+    flex-direction: column;
+}
+  
+
+ul{
+    list-style: none;
+    margin:0;
+    font-size: 0px;
+}
+
+li .contentber{
+    font-size: 0px;
+}
+
+
+/*ボタン*/
+.NavButton{
+   display: flex;
+    background-color: #f79214;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+/* ~メイン部分~ */
+.Main__title {
+    width: fit-content;
+    font-family: 'Lato',sans-serif;
+}
+
+h2{
+    font-size:36px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.Main__list{
+    
+    max-width: 1140px;
+    display: flex;
+    padding: 0px 50px;
+    flex-direction: column;
+    width: fit-content;
+}
+    
+.main_FirstContiner {
+    padding-top: 100px;
+}
+
+
+.main__imgList {
+    display: flex;
+    width: fit-content;
+    gap: 15px;
+    margin-bottom: 25px;
+
+}
+
+.img__22{
+    
+    height: 200px;
+}
+
+/*中央ボタン*/
+
+.Main__Button {
+    display: flex;
+    gap: 14px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.Main__Button_No1{
+    background-color: #f79214;
+    color: #fff;
+    padding: 21px 49px;
+    border-radius: 60px;
+}
+
+.Main__Button_No2{
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 21px 28px;
+    border-radius: 60px;
+    
+}
+
+.first_continer{
+    color: #a2a2a4;
+    font-size: 12px;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+
+
+/*動画〜*/
+
+.second_conttent {
+    background-color: #f79214; 
+    height: 380px;
+    margin: 0px;
+    width: 100%;
+}
+
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.content_Audeo_text {
+    display: flex;
+    gap: 40px;
+    margin: 0 50px;
+}
+
+
+.title_second {    
+    display: flex;
+    align-items: center;
+    font-size: 37px;
+    height: 60px;
+    color: #fff;
+    width: fit-content;
+    letter-spacing: .1em
+}
+
+.text__last {
+    color: #fff;
+}
+
+.Audeo {
+    height: auto;
+    width: 50%;
+}
+
+.btnLast {
+    color: #fff;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.Btn_wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 35px 0;
+}
+.title_second_Spn {
+    font-family: 'Lato',sans-serif;
+    font-size: 38px;
+}
+
+.About_Wrapper {
+    padding: 30px 0;
+}
+
+/*レスポンシブ　1080px〜*/
+
+@media screen and (max-width:1080px) {
+
+.hanbergerBer{
+    display:none;
+}
+.Toggle {
+    display: block;
+    position: fixed;   
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    background-color: #000;
+    right: 70px;
+}
+
+
+    
+    
+}
