@@ -7,13 +7,25 @@ body{
 }
 
 
+.header__top {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
 .Back_main_img {
     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
 }
-
+.FirstView__main-image--sp {
+    display: none;
+}
 
 /*ヘッダー編集*/
 
@@ -22,7 +34,6 @@ body{
     justify-content: space-between;
     margin: 0px 36px;
     padding: 20px 0;
-    position: absolute;
     
 }
 .header{
@@ -37,11 +48,18 @@ body{
 
 
 /*ヘッダーナビ編集*/
+.Toggle {
+    display: none;
+}
+
+.hanbergerBer {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
 
 .HanbergerNav{
     display:flex;
-    align-items:center;
-    margin-right: 40px;
 }
 
 .HanbergerNav span:first-child{
@@ -103,42 +121,42 @@ a{
 
 /* ~メイン部分~ */
 .Main__title {
-    width: fit-content;
     font-family: 'Lato',sans-serif;
 }
 
-h2{
-    font-size:36px;
+.Main__title {
+    font-size:38px;
     text-align: center;
-    display: inline-block;
     margin-bottom: 10px;
 }
 
 .Main__list{
     
     max-width: 1140px;
-    display: flex;
     padding: 0px 50px;
-    flex-direction: column;
-    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
     
-.main_FirstContiner {
-    padding-top: 100px;
+.FirstViewContent {
+    width: fit-content;
+    padding-bottom: 70px;
 }
+
 
 
 .main__imgList {
     display: flex;
     width: fit-content;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 25px;
 
 }
 
 .img__22{
     
-    height: 200px;
+    width: 40%;
 }
 
 /*中央ボタン*/
@@ -155,6 +173,7 @@ h2{
     color: #fff;
     padding: 21px 49px;
     border-radius: 60px;
+    text-align: center;
 }
 
 .Main__Button_No2{
@@ -176,41 +195,29 @@ h2{
 
 /*動画〜*/
 
-.second_conttent {
-    background-color: #f79214; 
-    height: 380px;
-    margin: 0px;
-    width: 100%;
-}
 
 
-.topics {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
 
-}
 
 .content_Audeo_text {
     display: flex;
+    max-width: 1140px;
     gap: 40px;
-    margin: 0 50px;
-}
-
-
-.title_second {    
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
     align-items: center;
-    font-size: 37px;
-    height: 60px;
-    color: #fff;
-    width: fit-content;
-    letter-spacing: .1em
+    justify-content: space-between;
+
 }
 
-.text__last {
+.title_second {
+    display: flex;
+    flex-direction: column;
     color: #fff;
 }
+
+
 
 .Audeo {
     height: auto;
@@ -222,41 +229,197 @@ h2{
     display: flex;
     gap: 5px;
     align-items: center;
+    font-weight: 600;
 }
 
-.Btn_wrapper {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    padding: 35px 0;
+.title_second h4 {
+    font-size: 38px;
+    line-height: 54px;
+    margin: unset;
 }
+
+
 .title_second_Spn {
     font-family: 'Lato',sans-serif;
     font-size: 38px;
+    letter-spacing: .1em;
+}
+.title_second p {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .About_Wrapper {
-    padding: 30px 0;
+    padding: 45px 0;
+    background-color: #f79214;
+    height: auto;
+    width: 100%;
+
 }
 
 /*レスポンシブ　1080px〜*/
 
 @media screen and (max-width:1080px) {
 
-.hanbergerBer{
-    display:none;
+.hanbergerBer {
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform .5s;
 }
+
 .Toggle {
     display: block;
-    position: fixed;   
-    width: 42px;
-    height: 42px;
+    position: relative;
     cursor: pointer;
+    width: 30px;
+    height: 21px;
+    z-index: 10;
+
+}
+main {
+    padding-top: 60px;
+}
+    
+.headerTop{
+    display: flex;
+    height: 20px;
+}
+
+.NavHamburger__line  {
+	position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
     background-color: #000;
-    right: 70px;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
 }
 
 
+.NavHamburger__line:first-child {
+    top: 0px;
+}
+
+
+.NavHamburger__line:last-child {
+    top: 100%;
+}
+
+.header__top  {
+    background-color: #fff;
+    z-index: 10;
+    position: fixed !important;
     
     
+}}
+
+/*タブレット*/
+
+@media screen and (max-width:1025px) {
+ .content_Audeo_text {
+   flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    
+.Audeo{
+    width:70%;
+}
+
+
+.title_second  {
+    width: 70%;
+}
+
+
+
+
+    
+    
+}
+
+/*スマホサイズ*/
+@media screen and (max-width:767px) {
+.Back_main_img{
+    background-image :none;
+    padding-top: 0;
+    padding-bottom: 35px;
+    width: 100%;
+
+}
+.FirstView__main-image--sp {
+    display: block;
+}
+
+
+.Back_main_img.FirstView__main-image--sp {
+    display: block;
+
+}
+
+.FirstView__main-image {
+    width: 100%;
+}
+
+.title_second {
+    
+    width: 100%;
+    
+}
+
+.Audeo {
+    width: 100%;
+}
+
+.Main__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+
+}
+
+.Main__list {
+     margin-top: -45vw;
+}
+
+.main__imgList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+
+}
+
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+
+.Main__Button_No2 {
+    display: none;
+}
+
+.Main__Button_No1 {
+    width: 100%;
+}
+
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.FirstViewContent__images {
+    width: 27.5%;
+}
+
+
+
+
+
 }
