@@ -6,6 +6,13 @@ body{
     
 }
 
+.NavButton:hover {
+    opacity: .3;
+}
+
+.Main__Button_No1:hover {
+    opacity: .3;
+}
 
 .header__top {
     position: absolute;
