@@ -11,7 +11,11 @@ body{
 }
 
 .Main__Button_No1:hover {
-    opacity: .3;
+    opacity: .8;
+}
+
+.Main__Button_No2:hover {
+     opacity: .8;
 }
 
 .header__top {
